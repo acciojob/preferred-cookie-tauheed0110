@@ -12,7 +12,7 @@ submit.addEventListener('click', (e) => {
     let expires = "expires=" + date.toUTCString();
     
     // Ensure proper cookie format with space after semicolon and using "=" between name and value
-    document.cookie = `size=${size}, color=${color}, ${expires}; path=/`;
+    document.cookie = `fontsize=${size}, fontcolor=${color}, ${expires}; path=/`;
     seeCookie();
 });
 
