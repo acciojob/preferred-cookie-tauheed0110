@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const fontsize = document.getElementById('fontsize');
 const fontcolor = document.getElementById('fontcolor');
 const submit = document.getElementById('submit');
@@ -25,10 +24,8 @@ function seeCookie(){
         const color = data[1].split("=")[1];
         
         console.log(size, color);
-        document.documentElement.style.cssText = `
-        --fontsize: ${size};
-        --fontcolor: ${color};
-        `;
+        document.body.style.fontSize = size;
+        document.body.style.color = color;
 
     }
 }
